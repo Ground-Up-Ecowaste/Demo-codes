@@ -40,3 +40,32 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
+  sampleId: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  soc: {
+    type: Number, // Soil Organic Carbon
+    required: true
+  },
+  heavyMetals: {
+    type: String, // or Array if multiple values
+    required: false
+  },
+  pH: {
+    type: Number,
+    required: true
+  },
+  bulkDensity: {
+    type: Number,
+    required: true
+  },
+  soilTexture: {
+    type: String,
+    required: true
+  },
+  ec: {
+    type: Number, // Electrical Conductivity
+    required: true
+  },
