@@ -82,3 +82,5 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     required: true
   }
 });
+
+module.exports = mongoose.model('FarmerSoilSample', FarmerSoilSampleSchema);
