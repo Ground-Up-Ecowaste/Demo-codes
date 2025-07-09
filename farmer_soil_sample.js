@@ -19,3 +19,15 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  fertiliserUsage: {
+    type: String,
+    required: true
+  },
+   previousResidueManagement: {
+    type: String,
+    required: true
+  },
+  plotSize: {
+    type: Number, // in acres or hectares or any SI unit we need
+    required: true
+  },
