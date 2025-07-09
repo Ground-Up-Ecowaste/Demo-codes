@@ -5,3 +5,11 @@ const BiomassTestReportSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
+  sampleCollectionDate: {
+    type: Date,
+    required: true
+  },
+  sampleType: {
+    type: String,
+    required: true
+  },
