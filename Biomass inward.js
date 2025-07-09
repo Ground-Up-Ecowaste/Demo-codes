@@ -31,7 +31,7 @@ const BiomassInwardSchema = new mongoose.Schema({
     required: true
   },
   netWeight: {
-    type: Number, // in kg or tons (confirm)
+    type: Number, // in kg or tons (confirm) have to use typecasting to convert float to number 23.00 to 23.
     required: true
   },
   tareWeight: {
@@ -43,3 +43,7 @@ const BiomassInwardSchema = new mongoose.Schema({
     required: true
   }
 });
+
+// according to kiran sheet vehicle sheet was repeating so putting here only one time . we can also validat time input
+//on frontend using Moment.js and day.js
+
