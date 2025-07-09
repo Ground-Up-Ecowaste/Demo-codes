@@ -35,3 +35,11 @@ const BiomassTestReportSchema = new mongoose.Schema({
     required: true,
     unique: true
   },
+  carbonPercent: {
+    type: Number, // C%
+    required: true
+  },
+  moisturePercent: {
+    type: Number, // Moisture%
+    required: true
+  },
