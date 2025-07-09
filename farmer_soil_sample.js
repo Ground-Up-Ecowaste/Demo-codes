@@ -31,3 +31,12 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     type: Number, // in acres or hectares or any SI unit we need
     required: true
   },
+  averageYield: {
+    type: Number, // in kg/hectare or similar
+    required: true
+  },
+  farmerId: {
+    type: String, //AS OF NOW FROM KIRAN WE WILL GENERATE THIS
+    required: true,
+    unique: true
+  },
