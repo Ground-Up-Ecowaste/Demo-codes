@@ -13,3 +13,11 @@ const BiomassTestReportSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  sampleSize: {
+    type: Number, // in grams or kilograms — clarify in frontend
+    required: true
+  },
+  depotCode: {
+    type: String,
+    required: true
+  },
