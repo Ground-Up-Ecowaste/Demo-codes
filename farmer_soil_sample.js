@@ -11,3 +11,11 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  contactInformation: {
+    type: String,
+    required: true
+  },
+  farmingPractices: {
+    type: String,
+    required: true
+  },
