@@ -1,11 +1,11 @@
 //as of we are not aware of exact SI unit of every Data points so  that can not lead to excacr data validation and assign 
 //true false as required also add data types to each parameter
 
-
+//add mongoose
 const FarmerSoilSampleSchema = new mongoose.Schema({
   timestamp: {
     type: Date,
-    default: Date.now
+    default: Date.now   //calling function to take current time
   },
   farmerName: {
     type: String,
@@ -32,7 +32,7 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     required: true
   },
   averageYield: {
-    type: Number, // in kg/hectare or similar
+    type: Number, // i am using number here but can be float also
     required: true
   },
   farmerId: {
@@ -41,7 +41,7 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     unique: true
   },
   sampleId: {
-    type: String,
+    type: String,  //AS OF NOW FROM KIRAN WE WILL GENERATE THIS
     required: true,
     unique: true
   },
@@ -74,7 +74,7 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     required: true
   },
   npk: {
-    type: String, // format like "N:P:K = 20:10:10"
+    type: String,  // find about format
     required: true
   },
   yearMapping: {
