@@ -69,3 +69,16 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     type: Number, // Electrical Conductivity
     required: true
   },
+  totalDissolvedSolvents: {
+    type: Number,
+    required: true
+  },
+  npk: {
+    type: String, // format like "N:P:K = 20:10:10"
+    required: true
+  },
+  yearMapping: {
+    type: Number, // e.g., 2024, 2025
+    required: true
+  }
+});
