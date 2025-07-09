@@ -21,3 +21,17 @@ const BiomassTestReportSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  additionalRemark: {
+    type: String,
+    default: ""
+  },
+  sampleNumberFTD: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  sampleId: {
+    type: String,
+    required: true,
+    unique: true
+  },
