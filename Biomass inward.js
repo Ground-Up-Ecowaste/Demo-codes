@@ -43,7 +43,7 @@ const BiomassInwardSchema = new mongoose.Schema({
     required: true
   }
 });
-
+module.exports = mongoose.model('BiomassInward', BiomassInwardSchema);
 // according to kiran sheet vehicle sheet was repeating so putting here only one time . we can also validat time input
 //on frontend using Moment.js and day.js
 
