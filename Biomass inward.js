@@ -5,3 +5,7 @@ const BiomassInwardSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
+  inwardDateOfCollection: {
+    type: Date,
+    required: true
+  },
