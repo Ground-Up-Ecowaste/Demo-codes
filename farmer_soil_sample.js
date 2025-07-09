@@ -7,3 +7,7 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
+  farmerName: {
+    type: String,
+    required: true
+  },
