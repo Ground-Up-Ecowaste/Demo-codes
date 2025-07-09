@@ -9,3 +9,7 @@ const BiomassInwardSchema = new mongoose.Schema({
     type: Date,
     required: true
   },
+  inwardInTime: {
+    type: String, // Format: "HH:mm" or full ISO string if needed
+    required: true
+  },
