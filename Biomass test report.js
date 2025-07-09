@@ -43,3 +43,12 @@ const BiomassTestReportSchema = new mongoose.Schema({
     type: Number, // Moisture%
     required: true
   },
+  gcv: {
+    type: Number, // Gross Calorific Value
+    required: true
+  },
+  heavyMetals: {
+    type: String, // or Array/Object if multiple values with details
+    required: false
+  }
+});
