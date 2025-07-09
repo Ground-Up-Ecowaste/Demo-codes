@@ -40,7 +40,7 @@ const BiomassTestReportSchema = new mongoose.Schema({
     required: true
   },
   moisturePercent: {
-    type: Number, // Moisture%
+    type: Number, // Moisture% abbrevation
     required: true
   },
   gcv: {
@@ -48,7 +48,7 @@ const BiomassTestReportSchema = new mongoose.Schema({
     required: true
   },
   heavyMetals: {
-    type: String, // or Array/Object if multiple values with details
+    type: String, 
     required: false
   }
 });
