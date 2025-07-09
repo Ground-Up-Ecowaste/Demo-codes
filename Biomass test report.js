@@ -7,36 +7,36 @@ const BiomassTestReportSchema = new mongoose.Schema({
   },
   sampleCollectionDate: {
     type: Date,
-    required: true
+    required: true //do not use date.now
   },
   sampleType: {
     type: String,
-    required: true
+    required: true //drop down
   },
   sampleSize: {
-    type: Number, // in grams or kilograms — clarify in frontend
+    type: Number, 
     required: true
   },
   depotCode: {
-    type: String,
+    type: char, 
     required: true
   },
   additionalRemark: {
     type: String,
-    default: ""
+    default: ""  //makes sense
   },
   sampleNumberFTD: {
     type: String,
-    required: true,
+    required: true, //maybe integer value
     unique: true
   },
   sampleId: {
-    type: String,
+    type: String, //it is made up of depot code
     required: true,
     unique: true
   },
   carbonPercent: {
-    type: Number, // C%
+    type: Number, // C% abbrevation
     required: true
   },
   moisturePercent: {
