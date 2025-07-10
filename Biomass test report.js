@@ -1,4 +1,5 @@
 //add mongoose
+const mongoose=require('mongoose')
 
 const BiomassTestReportSchema = new mongoose.Schema({
   timestamp: {
@@ -51,5 +52,5 @@ const BiomassTestReportSchema = new mongoose.Schema({
     type: String, 
     required: false
   }
-});
+},{timestamp:true});
 module.exports = mongoose.model('BiomassTestReport', BiomassTestReportSchema);

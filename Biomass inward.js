@@ -1,6 +1,10 @@
 //add mongoose
 
+const mongoose=require('mongoose')
+
+
 const BiomassInwardSchema = new mongoose.Schema({
+  biomassId//add auto generate
   timestamp: {
     type: Date,
     default: Date.now // function
@@ -42,7 +46,7 @@ const BiomassInwardSchema = new mongoose.Schema({
     type: Number,
     required: true
   }
-});
+},{timestamp: true});
 module.exports = mongoose.model('BiomassInward', BiomassInwardSchema);
 // according to kiran sheet vehicle sheet was repeating so putting here only one time . we can also validat time input
 //on frontend using Moment.js and day.js

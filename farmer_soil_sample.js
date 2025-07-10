@@ -2,11 +2,15 @@
 //true false as required also add data types to each parameter
 
 //add mongoose
+const mongoose=require('mongoose')
 const FarmerSoilSampleSchema = new mongoose.Schema({
   timestamp: {
     type: Date,
-    default: Date.now   //calling function to take current time
+    default: Date.now   //calling function to take current time   //change to created at
   },
+  collectedOn{
+    type: Date
+  }, // i will add
   farmerName: {
     type: String,
     required: true
@@ -36,7 +40,7 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     required: true
   },
   farmerId: {
-    type: String, //AS OF NOW FROM KIRAN WE WILL GENERATE THIS
+    type: String, //AS OF NOW FROM KIRAN WE WILL GENERATE THIS 
     required: true,
     unique: true
   },
@@ -81,6 +85,6 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
     type: Number, // e.g., 2024, 2025
     required: true
   }
-});
+},{ timestamps: true });
 
 module.exports = mongoose.model('FarmerSoilSample', FarmerSoilSampleSchema);
