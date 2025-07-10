@@ -88,3 +88,36 @@ const FarmerSoilSampleSchema = new mongoose.Schema({
 },{ timestamps: true });
 
 module.exports = mongoose.model('FarmerSoilSample', FarmerSoilSampleSchema);
+
+
+//SAMPLE DATA
+
+//timestamp is auto-generated when the record is created (alias of createdAt).
+//_id is the MongoDB object id
+//_v is Mongoose internal version key
+{
+  "_id": "666f1c1a9f38a00123abcd45",
+  "timestamp": "2025-06-23T09:23:00.000Z",
+  "collectedOn": "2025-06-21T00:00:00.000Z",
+  "farmerName": "Ramesh Kumar",
+  "contactInformation": "9876543210",
+  "farmingPractices": "Conventional farming with crop rotation",
+  "fertiliserUsage": "NPK 10:26:26 used twice a year",
+  "previousResidueManagement": "Burning crop residue",
+  "plotSize": 2.5,
+  "averageYield": 3.2,
+  "farmerId": "FARM123456",
+  "sampleId": "SAMPLE20250621A",
+  "soc": 1.87,
+  "heavyMetals": "Below detectable limit",
+  "pH": 6.5,
+  "bulkDensity": 1.3,
+  "soilTexture": "Loamy",
+  "ec": 0.7,
+  "totalDissolvedSolvents": 1.1,
+  "npk": "12-32-16",
+  "yearMapping": 2025,
+  "createdAt": "2025-06-23T09:23:00.000Z",
+  "updatedAt": "2025-06-23T09:23:00.000Z",
+  "__v": 0
+}
