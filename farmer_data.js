@@ -44,3 +44,28 @@ const FarmerSchema = new mongoose.Schema({
 }, { timestamps: true }); // This auto-generates createdAt & updatedAt
 
 module.exports = mongoose.model('Farmer', FarmerSchema);
+
+
+//sample data
+//created and updated at auto by mongoose via timestamp:true
+//farmer id is unique
+
+{
+  "_id": "6670123456abcdef12345678",
+  "timestamp": "2025-06-23T09:30:00.000Z",
+  "farmerName": "Suresh Yadav",
+  "contactInformation": {
+    "phone": "9876543210",
+    "email": "suresh.yadav@example.com",
+    "address": "Village Rampur, Block X, District Y, Uttar Pradesh"
+  },
+  "farmingPractices": "Mixed cropping and reduced tillage",
+  "fertiliserUsage": "NPK-based with occasional organic compost",
+  "previousResidueManagement": "Ploughing residue back into soil",
+  "plotSize": 4,  // hectares
+  "averageYield": 2.8,  // tons/hectare
+  "farmerId": "FARM-UP-2025-0023",
+  "createdAt": "2025-06-23T09:30:00.000Z",
+  "updatedAt": "2025-06-23T09:30:00.000Z",
+  "__v": 0
+}
